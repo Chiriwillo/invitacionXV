@@ -28,8 +28,8 @@ export function Location() {
         </CardHeader>
         <CardContent>
           <p className="text-lg font-semibold">{ceremonyLocation.name}</p>
-          <p className="text-muted-foreground">{ceremonyLocation.address}</p>
-          <p className="text-muted-foreground font-bold mt-2">6:00 PM</p>
+          <p className="text-lg text-muted-foreground">{ceremonyLocation.address}</p>
+          <p className="text-lg text-muted-foreground font-bold mt-2">6:00 PM</p>
           <Button asChild variant="link" className="mt-4 text-primary">
             <a href={ceremonyLocation.mapLink} target="_blank" rel="noopener noreferrer">Ver en Mapa</a>
           </Button>
@@ -47,8 +47,8 @@ export function Location() {
         </CardHeader>
         <CardContent>
           <p className="text-lg font-semibold">{receptionLocation.name}</p>
-          <p className="text-muted-foreground">{receptionLocation.address}</p>
-          <p className="text-muted-foreground font-bold mt-2">8:00 PM</p>
+          <p className="text-lg text-muted-foreground">{receptionLocation.address}</p>
+          <p className="text-lg text-muted-foreground font-bold mt-2">8:00 PM</p>
           <Button asChild variant="link" className="mt-4 text-primary">
             <a href={receptionLocation.mapLink} target="_blank" rel="noopener noreferrer">Ver en Mapa</a>
           </Button>

@@ -10,7 +10,7 @@ type TimeUnitProps = {
 const TimeUnit = ({ value, label }: TimeUnitProps) => (
   <div className="flex flex-col items-center justify-center bg-secondary/70 rounded-2xl p-4 md:p-8 w-24 h-24 md:w-32 md:h-32 shadow-lg">
     <span className="text-4xl md:text-6xl font-bold text-primary">{value}</span>
-    <span className="text-sm md:text-base text-muted-foreground uppercase tracking-wider">{label}</span>
+    <span className="text-base md:text-lg text-muted-foreground uppercase tracking-wider">{label}</span>
   </div>
 );
 

@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Montserrat', 'sans-serif'],
+        body: ['Cormorant Garamond', 'serif'],
         headline: ['Great Vibes', 'cursive'],
         code: ['monospace'],
       },

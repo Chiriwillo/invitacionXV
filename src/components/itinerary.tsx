@@ -14,42 +14,44 @@ const itineraryItems = [
 const ItineraryItem = ({ item, index, isVisible }: { item: { time: string; event: string }, index: number, isVisible: boolean }) => {
   const isEven = index % 2 === 0;
   return (
-    <div className="flex items-center w-full max-w-md">
-      {isEven ? (
-        <div className="w-5/12">
-          <div
-            className={`text-right transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}
-            style={{ transitionDelay: `${index * 150}ms` }}
-          >
-            <p className="font-headline text-3xl text-primary">{item.event}</p>
-            <p className="text-muted-foreground">{item.time}</p>
+    <div className="flex justify-center items-center w-full">
+      <div className="flex items-center w-full max-w-md">
+        {isEven ? (
+          <div className="w-5/12">
+            <div
+              className={`text-right transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}
+              style={{ transitionDelay: `${index * 150}ms` }}
+            >
+              <p className="font-headline text-3xl text-primary">{item.event}</p>
+              <p className="text-lg text-muted-foreground">{item.time}</p>
+            </div>
           </div>
-        </div>
-      ) : <div className="w-5/12"></div>}
+        ) : <div className="w-5/12"></div>}
 
-      <div className="relative w-2/12 flex justify-center">
-        <div className="h-full w-0.5 bg-primary/20 absolute"></div>
-        <div
-          className={`z-10 bg-background transition-all duration-500 ease-in-out ${isVisible ? 'scale-100' : 'scale-0'}`}
-          style={{ transitionDelay: `${index * 150 + 100}ms` }}
-        >
-          <div className="p-2 bg-primary rounded-full text-primary-foreground shadow-lg">
-            <Heart className="w-5 h-5 fill-current" />
+        <div className="relative w-2/12 flex justify-center">
+          <div className="h-full w-0.5 bg-primary/20 absolute"></div>
+          <div
+            className={`z-10 bg-background transition-all duration-500 ease-in-out ${isVisible ? 'scale-100' : 'scale-0'}`}
+            style={{ transitionDelay: `${index * 150 + 100}ms` }}
+          >
+            <div className="p-2 bg-primary rounded-full text-primary-foreground shadow-lg">
+              <Heart className="w-5 h-5 fill-current" />
+            </div>
           </div>
         </div>
+
+        {!isEven ? (
+          <div className="w-5/12">
+            <div
+              className={`text-left transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}
+              style={{ transitionDelay: `${index * 150}ms` }}
+            >
+              <p className="font-headline text-3xl text-primary">{item.event}</p>
+              <p className="text-lg text-muted-foreground">{item.time}</p>
+            </div>
+          </div>
+        ) : <div className="w-5/12"></div>}
       </div>
-
-      {!isEven ? (
-        <div className="w-5/12">
-          <div
-            className={`text-left transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}
-            style={{ transitionDelay: `${index * 150}ms` }}
-          >
-            <p className="font-headline text-3xl text-primary">{item.event}</p>
-            <p className="text-muted-foreground">{item.time}</p>
-          </div>
-        </div>
-      ) : <div className="w-5/12"></div>}
     </div>
   );
 };
