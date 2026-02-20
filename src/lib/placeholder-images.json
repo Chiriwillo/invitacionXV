@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Elegant floral background for the hero section",
+      "imageUrl": "/dsc00083.jpg",
+      "imageHint": "quinceanera portrait"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Recuerdo de la Quinceañera 1",
+      "imageUrl": "/dsc00076.jpg",
+      "imageHint": "quinceanera photo"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Recuerdo de la Quinceañera 2",
+      "imageUrl": "/dsc000821.jpg",
+      "imageHint": "quinceanera photo"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Recuerdo de la Quinceañera 3",
+      "imageUrl": "/dsc00084.jpeg",
+      "imageHint": "quinceanera photo"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Recuerdo de la Quinceañera 4",
+      "imageUrl": "/dsc00093.jpeg",
+      "imageHint": "quinceanera photo"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Recuerdo de la Quinceañera 5",
+      "imageUrl": "/dsc00103.jpg",
+      "imageHint": "quinceanera photo"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Recuerdo de la Quinceañera 6",
+      "imageUrl": "/dsc00112.jpeg",
+      "imageHint": "quinceanera photo"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Recuerdo de la Quinceañera 7",
+      "imageUrl": "/dsc00118.jpeg",
+      "imageHint": "quinceanera photo"
+    }
+  ]
+}
